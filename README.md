@@ -42,6 +42,8 @@ El CRUD de Redadas permite realizar las siguientes operaciones:
 
 - Spring Boot
 - MySQL
+- Java
+- Html,Css,JavaScript
 ## Licencia
 
 Este proyecto no se encuentra bajo ninguna licencia.
