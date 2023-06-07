@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Acciones para los Policias</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styleFormularioPolicia.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+  <header>
+    <div class="header">
+      <h2> <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Distintivo_de_la_Direcci%C3%B3n_de_Antinarc%C3%B3ticos_%28Colombia%29.svg/2560px-Distintivo_de_la_Direcci%C3%B3n_de_Antinarc%C3%B3ticos_%28Colombia%29.svg.png"
+          alt="Logo" width="160" height="80" class="logo">
+        Acciones para los Policias </h2>
+    </div>
+  </header>
+
+  <br><br>
+  <h3 class="text-center">En este apartado podras realizar diferentes operaciones para los policias:</h3>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <hr>
+        <h4>Agregar Policía</h4>
+        <form>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre"
+              placeholder="Ingrese el nombre del policía" pattern="[A-Za-z]+" required autocomplete="off">
+          </div>
+          <div class="mb-3">
+            <label for="edad" class="form-label">Edad:</label>
+            <input type="number" class="form-control" id="edad" name="edad" min="18" max="100" required>
+          </div>
+          <div class="mb-3">
+            <label for="fecha-ingreso" class="form-label">Fecha de ingreso a la institución:</label>
+            <input type="date" class="form-control" id="fecha-ingreso" name="fecha-ingreso" min="1923-01-01"
+              max="2030-12-31" required>
+          </div>
+          <div class="mb-3">
+            <label for="rango" class="form-label">Rango:</label>
+            <input type="text" class="form-control" id="rango" placeholder="Ingrese el rango del policía" required
+              autocomplete="off">
+          </div>
+          <button type="submit" class="btn btn-primary" onclick="agregarPolicia()">Enviar</button>
+          <hr>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 mt-4">
+        <hr>
+
+        <h4>Eliminar Policía</h4>
+        <form>
+          <div class="mb-3">
+            <label for="nombre-eliminar" class="form-label">Nombre del policía:</label>
+            <input type="text" class="form-control" id="nombre-eliminar" name="nombre-eliminar"
+              placeholder="Ingrese el nombre del policía a eliminar" required>
+          </div>
+          <button type="submit" class="btn btn-danger">Eliminar</button>
+          <hr>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 mt-4">
+        <hr>
+        <h4>Actualizar Policía</h4>
+        <form>
+          <div class="mb-3">
+            <label for="nombre-actualizar" class="form-label">Nombre del policía:</label>
+            <input type="text" class="form-control" id="nombre-actualizar" name="nombre-actualizar"
+              placeholder="Ingrese el nombre del policía a actualizar" required>
+          </div>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre"
+              placeholder="Ingrese el nuevo nombre del policía" pattern="[A-Za-z]+" required autocomplete="off">
+          </div>
+          <div class="mb-3">
+            <label for="edad" class="form-label">Edad:</label>
+            <input type="number" class="form-control" id="edad" name="edad" min="18" max="100" required>
+          </div>
+          <div class="mb-3">
+            <label for="fecha-ingreso" class="form-label">Fecha de ingreso a la institución:</label>
+            <input type="date" class="form-control" id="fecha-ingreso" name="fecha-ingreso" min="1923-01-01"
+              max="2030-12-31" required>
+          </div>
+          <div class="mb-3">
+            <label for="rango" class="form-label">Rango:</label>
+            <input type="text" class="form-control" id="rango" placeholder="Ingrese el nuevo rango del policía" required
+              autocomplete="off">
+          </div>
+          <button type="submit" class="btn btn-warning">Actualizar</button>
+          <hr>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 mt-4">
+        <hr>
+
+        <h4>Mostrar Policías</h4>
+        <button class="btn btn-info">Mostrar</button>
+        <hr>
+
+      </div>
+    </div>
+  </div>
+
+  <br>
+  
+ <a class="btn btn-primary" href="index.html" role="button">Volver</a>
+  
+  <script src="script.js"></script>
+
+
+  <br><br>
+</body>
+
+</html>
